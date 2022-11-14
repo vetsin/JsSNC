@@ -1,0 +1,22 @@
+{
+  "name": "jssnc",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "JavaScript interface for the ServiceNow Table API",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "keywords": [
+    "servicenow"
+  ],
+  "author": "Matthew Gill",
+  "license": "MIT",
+  "devDependencies": {
+    "jasmine": "^4.5.0"
+  },
+  "dependencies": {
+    "https": "^1.0.0",
+    "url": "^0.11.0"
+  }
+}
