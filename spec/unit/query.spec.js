@@ -1,8 +1,15 @@
 import GlideRecord from '../../lib/record.js'
+import utils from '../helpers/utils.js'
 
-describe('A GlideRecord that doesnt make requests', () => {
-  it('can be instanced', () => {
-    let gr = new GlideRecord(null, 'problem')
+describe('Query', function() {
+
+  beforeEach(function() {
+    this.client = utils.loadInstance()
+  });
+
+  it('can load it correctly', function() {
+    expect(this.client).not.toBeNull()
+    let gr = this.client.GlideRecord('problem')
     expect(gr).not.toBeNull()
     expect(gr.table).toEqual('problem')
   })

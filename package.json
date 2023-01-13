@@ -13,6 +13,7 @@
   "author": "Matthew Gill",
   "license": "MIT",
   "devDependencies": {
+    "dotenv": "^16.0.3",
     "jasmine": "^4.5.0"
   },
   "dependencies": {
